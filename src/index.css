@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+  background-color: #fdf6e3;
+  color: #2c1810;
+  min-height: 100vh;
+}
+
+:root {
+  --red: #e63946;
+  --gold: #f4a261;
+  --navy: #1d3557;
+  --cream: #fdf6e3;
+  --dark-brown: #2c1810;
+  --light-gold: #ffd166;
+  --ocean-blue: #2a9d8f;
+}

@@ -1,0 +1,234 @@
+.home {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---- Hero ---- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #fff9f0 0%, #ffeedd 100%);
+  border: 3px solid var(--gold);
+  border-radius: 16px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.hero-title {
+  font-family: 'Bangers', cursive;
+  font-size: 2.8rem;
+  color: var(--navy);
+  line-height: 1.1;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.highlight {
+  color: var(--red);
+  text-shadow: 2px 2px 0 var(--gold);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.hero-role {
+  font-family: 'Bangers', cursive;
+  font-size: 1.4rem;
+  color: var(--red);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 24px;
+  max-width: 480px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-family: 'Bangers', cursive;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-red {
+  background-color: var(--red);
+  color: white;
+  border-color: var(--dark-brown);
+}
+
+.btn-red:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-navy {
+  background-color: var(--navy);
+  color: var(--light-gold);
+  border-color: var(--gold);
+}
+
+.btn-navy:hover {
+  background-color: #16283f;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ---- Hero Image ---- */
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-frame {
+  text-align: center;
+  background: white;
+  border: 4px solid var(--red);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 6px 6px 0 var(--navy);
+  max-width: 240px;
+}
+
+.luffy-img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-caption {
+  font-family: 'Bangers', cursive;
+  color: var(--red);
+  font-size: 1rem;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+/* ---- Wave Divider ---- */
+.wave-divider {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--ocean-blue);
+  font-family: 'Bangers', cursive;
+  letter-spacing: 4px;
+  margin: 10px 0 30px;
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* ---- Stats ---- */
+.stats {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: white;
+  border: 3px solid var(--navy);
+  border-radius: 10px;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 4px 4px 0 var(--gold);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 8px 0 var(--gold);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.stat-number {
+  font-family: 'Bangers', cursive;
+  font-size: 2.2rem;
+  color: var(--red);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* ---- Quote ---- */
+.quote-section {
+  background-color: var(--navy);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.pirate-quote {
+  font-style: italic;
+  color: var(--cream);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  border-left: 5px solid var(--gold);
+  padding-left: 20px;
+}
+
+.pirate-quote cite {
+  display: block;
+  margin-top: 12px;
+  color: var(--gold);
+  font-family: 'Bangers', cursive;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+@media (max-width: 600px) {
+  .hero-title { font-size: 2rem; }
+  .hero { justify-content: center; }
+}

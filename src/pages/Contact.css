@@ -1,0 +1,217 @@
+.contact {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-family: 'Bangers', cursive;
+  font-size: 2.8rem;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 0 var(--gold);
+}
+
+.contact-intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.form-title {
+  font-family: 'Bangers', cursive;
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+}
+
+/* Form */
+.form-section {
+  background: white;
+  border: 3px solid var(--navy);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 5px 5px 0 var(--gold);
+}
+
+.alert {
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  font-weight: bold;
+  animation: fadeIn 0.4s ease;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border: 2px solid #28a745;
+  color: #155724;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  border: 2px solid #e63946;
+  color: #721c24;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: var(--dark-brown);
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px 14px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+  color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.15);
+}
+
+.submit-btn {
+  font-family: 'Bangers', cursive;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  background-color: var(--red);
+  color: white;
+  border: 3px solid var(--dark-brown);
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.submit-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Social */
+.social-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border: 3px solid;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+}
+
+.social-card:hover {
+  transform: translateX(6px);
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.15);
+}
+
+.social-icon {
+  font-size: 1.8rem;
+}
+
+.social-name {
+  font-family: 'Bangers', cursive;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.social-handle {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.github     { background: #f6f8fa; border-color: #24292e; }
+.email      { background: #fff4e6; border-color: #e63946; }
+.twitter    { background: #e8f5fd; border-color: #1da1f2; }
+.linkedin   { background: #e8f0fb; border-color: #0077b5; }
+.discord    { background: #eee9fb; border-color: #5865f2; }
+
+.availability-box {
+  background: linear-gradient(135deg, #d4edda, #c3e6cb);
+  border: 2px solid #28a745;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: auto;
+}
+
+.availability-box h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem;
+  color: #155724;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.availability-box p {
+  color: #1e7e34;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 650px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

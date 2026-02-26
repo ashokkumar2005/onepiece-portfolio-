@@ -1,0 +1,150 @@
+.projects {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-family: 'Bangers', cursive;
+  font-size: 2.8rem;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 0 var(--gold);
+}
+
+.projects-intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  border: 3px solid;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 5px 10px 0 rgba(0,0,0,0.2);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-emoji {
+  font-size: 2.5rem;
+}
+
+.project-status {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-family: 'Comic Neue', cursive;
+}
+
+.project-title {
+  font-family: 'Bangers', cursive;
+  font-size: 1.5rem;
+  color: var(--dark-brown);
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-badge {
+  background-color: var(--navy);
+  color: var(--light-gold);
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.project-btn {
+  text-decoration: none;
+  font-family: 'Bangers', cursive;
+  font-size: 1rem;
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: 2px solid;
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-github {
+  background-color: #24292e;
+  color: white;
+  border-color: #24292e;
+}
+
+.btn-github:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.btn-demo {
+  background-color: var(--red);
+  color: white;
+  border-color: var(--dark-brown);
+}
+
+.btn-demo:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.projects-footer {
+  text-align: center;
+  background: var(--navy);
+  color: var(--light-gold);
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  padding: 16px;
+  border-radius: 10px;
+}

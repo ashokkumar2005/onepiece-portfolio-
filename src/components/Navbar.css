@@ -1,0 +1,93 @@
+.navbar {
+  background-color: var(--navy);
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid var(--red);
+  flex-wrap: wrap;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skull {
+  font-size: 2rem;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-10deg); }
+  75%  { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.logo-text {
+  font-family: 'Bangers', cursive;
+  font-size: 1.8rem;
+  color: var(--light-gold);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px var(--red);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--cream);
+  font-family: 'Bangers', cursive;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.navbar-links a:hover {
+  background-color: var(--red);
+  border-color: var(--light-gold);
+  color: var(--light-gold);
+  transform: translateY(-2px);
+}
+
+.navbar-links a.active {
+  background-color: var(--red);
+  border-color: var(--light-gold);
+  color: var(--light-gold);
+}
+
+.navbar-tagline {
+  font-family: 'Bangers', cursive;
+  color: var(--gold);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar-tagline {
+    display: none;
+  }
+}
