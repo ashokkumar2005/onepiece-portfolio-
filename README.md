@@ -71,7 +71,7 @@ src/
 
 ## 🌟 Notes
 
-This is a **frontend-only** project — no backend, no database, no API calls. The contact form shows a success message but doesn't actually send emails.
+This is a **frontend-only** project — no backend, no database, no API calls. The contact form shows a success message to send email i'll create this with help of mailjs application.
 
 ---
 
