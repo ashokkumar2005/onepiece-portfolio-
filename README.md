@@ -1,78 +1,63 @@
-# ⚓ One Piece Portfolio Website 🏴‍☠️
+# One Piece Anime Portfolio ⚓🏴‍☠️
 
-A beginner-level React portfolio website inspired by the anime **One Piece**! Built with Vite + React + plain CSS.
+This is a **beginner React portfolio website** inspired by the One Piece anime.
+The project demonstrates basic React concepts like components, routing, and styling.
 
-## 🗺️ Pages
+## 🚀 Features
 
-- **Home** – Hero section with intro and stats
-- **About** – Bio, skill bars, and character inspirations
-- **Projects** – Project cards showcasing your work
-- **Contact** – Contact form and social media links
+* Multi-page React website
+* Separate components for each page
+* Beginner friendly code structure
+* Anime themed UI
+* Portfolio project section
+* Contact page
 
-## 🚀 Getting Started
+## 🛠 Technologies Used
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm
+* React
+* Vite
+* JavaScript
+* HTML
+* CSS
+* React Router
 
-### Installation
+## 📂 Project Structure
 
-```bash
-# 1. Install dependencies
+src/
+
+* components/
+
+  * Navbar.jsx
+* pages/
+
+  * Home.jsx
+  * About.jsx
+  * Projects.jsx
+  * Crew.jsx
+  * Contact.jsx
+* App.jsx
+* main.jsx
+
+## ▶ Run the Project
+
+Install dependencies
+
 npm install
 
-# 2. Start the dev server
+Start development server
+
 npm run dev
-```
 
-Then open your browser at **http://localhost:5173**
+Then open
 
-### Build for Production
+http://localhost:5173
 
-```bash
-npm run build
-```
+## 👨‍💻 Author
 
-## 🛠️ Tech Stack
+Ashokkumar T
 
-- **React 18** – UI library
-- **Vite** – Build tool
-- **React Router v6** – Client-side routing
-- **Plain CSS** – No frameworks, just CSS files!
-- **Google Fonts** – Bangers + Comic Neue
+GitHub: https://github.com/ashokkumar2005
 
-## 📁 Project Structure
+## 📌 Purpose
 
-```
-src/
-  components/
-    Navbar.jsx      # Navigation bar
-    Navbar.css
-  pages/
-    Home.jsx        # Landing page
-    Home.css
-    About.jsx       # About me + skills
-    About.css
-    Projects.jsx    # Project showcase
-    Projects.css
-    Contact.jsx     # Contact form
-    Contact.css
-  App.jsx           # Main app + routing
-  App.css
-  index.css         # Global styles
-  main.jsx          # React entry point
-```
-
-## 🏴‍☠️ Customization
-
-- Edit the data in each page file to add your real name, projects, and social links.
-- Replace placeholder images with your own photos.
-- Update colors in `src/index.css` (CSS variables).
-
-## 🌟 Notes
-
-This is a **frontend-only** project — no backend, no database, no API calls. The contact form shows a success message to send email i'll create this with help of mailjs application.
-
----
-
-*"I'm gonna be the King of Developers!" — Monkey D. Dev* ☠️
+This project was built to practice **React components and frontend development**.
